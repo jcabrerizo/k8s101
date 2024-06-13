@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: pod-1
+    tier: frontend
+    team: artemidis
+  name: pod-1
+spec:
+  containers:
+    - image: nginx
+      name: pod-1
+      resources: { }
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: { }
