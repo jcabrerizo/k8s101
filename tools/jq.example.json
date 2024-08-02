@@ -1,0 +1,1082 @@
+[
+  {
+    "url": "https://api.github.com/repos/jqlang/jq/issues/3048",
+    "repository_url": "https://api.github.com/repos/jqlang/jq",
+    "labels_url": "https://api.github.com/repos/jqlang/jq/issues/3048/labels{/name}",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/issues/3048/comments",
+    "events_url": "https://api.github.com/repos/jqlang/jq/issues/3048/events",
+    "html_url": "https://github.com/jqlang/jq/issues/3048",
+    "id": 2150125608,
+    "node_id": "I_kwDOAE3WVc6AKFAo",
+    "number": 3048,
+    "title": "Add top level function for this change",
+    "user": {
+      "login": "syco",
+      "id": 54575,
+      "node_id": "MDQ6VXNlcjU0NTc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54575?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/syco",
+      "html_url": "https://github.com/syco",
+      "followers_url": "https://api.github.com/users/syco/followers",
+      "following_url": "https://api.github.com/users/syco/following{/other_user}",
+      "gists_url": "https://api.github.com/users/syco/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/syco/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/syco/subscriptions",
+      "organizations_url": "https://api.github.com/users/syco/orgs",
+      "repos_url": "https://api.github.com/users/syco/repos",
+      "events_url": "https://api.github.com/users/syco/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/syco/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 39532099,
+        "node_id": "MDU6TGFiZWwzOTUzMjA5OQ==",
+        "url": "https://api.github.com/repos/jqlang/jq/labels/feature%20request",
+        "name": "feature request",
+        "color": "207de5",
+        "default": false,
+        "description": null
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+    ],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2024-02-22T23:37:49Z",
+    "updated_at": "2024-02-23T11:11:27Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "body": "https://github.com/jqlang/jq/blob/913b26469f47351a9f75a1bc4145f45421115e37/ChangeLog#L826-L829
+
+    Hi,
+    when
+    you
+    add
+    multiple
+    files
+    you
+    can
+    do
+    either
+    `
+    jq
+    -s
+    '.[0] + .[1] + .[2]'
+    file0.json
+    file1.json
+    file2.json
+    `
+    or
+    `
+    jq
+    -s
+    'add'
+    *.json
+    `
+
+    can
+    we
+    have
+    a
+    similar
+    syntax
+    for
+    `
+    jq
+    -s
+    '.[0] * .[1] * .[2]'
+    file0.json
+    file1.json
+    file2.json
+    `
+    ?
+    Could
+    maybe
+    be:
+    `
+    jq
+    -s
+    'multiply'
+    *.json
+    `
+
+    Thanks
+    ",
+    "reactions": {
+      "url": "https://api.github.com/repos/jqlang/jq/issues/3048/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/jqlang/jq/issues/3048/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null
+  },
+  {
+    "url": "https://api.github.com/repos/jqlang/jq/issues/3047",
+    "repository_url": "https://api.github.com/repos/jqlang/jq",
+    "labels_url": "https://api.github.com/repos/jqlang/jq/issues/3047/labels{/name}",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/issues/3047/comments",
+    "events_url": "https://api.github.com/repos/jqlang/jq/issues/3047/events",
+    "html_url": "https://github.com/jqlang/jq/issues/3047",
+    "id": 2143247797,
+    "node_id": "I_kwDOAE3WVc5_v121",
+    "number": 3047,
+    "title": "Converting non-iso8601 datetime strings to epoch (mktime) format",
+    "user": {
+      "login": "luckman212",
+      "id": 1992842,
+      "node_id": "MDQ6VXNlcjE5OTI4NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1992842?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/luckman212",
+      "html_url": "https://github.com/luckman212",
+      "followers_url": "https://api.github.com/users/luckman212/followers",
+      "following_url": "https://api.github.com/users/luckman212/following{/other_user}",
+      "gists_url": "https://api.github.com/users/luckman212/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/luckman212/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/luckman212/subscriptions",
+      "organizations_url": "https://api.github.com/users/luckman212/orgs",
+      "repos_url": "https://api.github.com/users/luckman212/repos",
+      "events_url": "https://api.github.com/users/luckman212/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/luckman212/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+    ],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2024-02-19T22:44:25Z",
+    "updated_at": "2024-02-20T23:29:09Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "body": "### Version
+
+    `
+    jq-1.7.1
+    `
+
+    #
+    #
+    #
+    Problem
+
+    I
+    am
+    working
+    with
+    an
+  [
+    API
+  ]
+  (https
+  :
+  //docs.syncthing.net/rest/stats-device-get.html) that outputs dates in this format:
+
+  `
+  `
+  `
+  json
+  {
+    \
+  "lastSeen\": \"2024-02-19T17:37:01-05:00\",
+  \
+  "lastConnectionDurationS\": 190.612964
+  }
+  `
+  `
+  `
+  I
+  'm trying to parse that `lastSeen` string into epoch time, something like
+
+  `
+  `
+  `
+  shelll
+  $
+  jq
+  '.lastSeen | strptime(\"%Y-%m-%dT%H:%M:%S-05:00\") | mktime'
+  1708364221
+  `
+  `
+  `
+
+  I
+  am
+  looking
+  for
+  a
+  more
+  generalized
+  function
+  that
+  can
+  accept
+  a
+  date
+  formatted
+  in
+  this
+  way
+  and
+  turn
+  it
+  into
+  the
+  correct
+  epoch
+  time
+  integer.
+  My
+  jq-fu
+  isn
+  't up to the challenge. Was wondering if anyone had ideas. I'
+  ve
+  read
+  the
+  related
+  links
+  below.
+
+  #
+  #
+  #
+  Related
+
+  -
+  https
+  :
+  //jqlang.github.io/jq/manual/#dates
+  -
+  https
+  :
+  //github.com/jqlang/jq/issues/1053
+  ",
+  "reactions"
+  :
+  {
+    "url": "https://api.github.com/repos/jqlang/jq/issues/3047/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url"
+  :
+  "https://api.github.com/repos/jqlang/jq/issues/3047/timeline",
+  "performed_via_github_app"
+  :
+  null,
+  "state_reason"
+  :
+  null
+  },
+  {
+    "url": "https://api.github.com/repos/jqlang/jq/issues/3044",
+    "repository_url": "https://api.github.com/repos/jqlang/jq",
+    "labels_url": "https://api.github.com/repos/jqlang/jq/issues/3044/labels{/name}",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/issues/3044/comments",
+    "events_url": "https://api.github.com/repos/jqlang/jq/issues/3044/events",
+    "html_url": "https://github.com/jqlang/jq/pull/3044",
+    "id": 2141214335,
+    "node_id": "PR_kwDOAE3WVc5nOgq7",
+    "number": 3044,
+    "title": "implement borrowing",
+    "user": {
+      "login": "MaxBrandtner",
+      "id": 110912574,
+      "node_id": "U_kgDOBpxkPg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110912574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MaxBrandtner",
+      "html_url": "https://github.com/MaxBrandtner",
+      "followers_url": "https://api.github.com/users/MaxBrandtner/followers",
+      "following_url": "https://api.github.com/users/MaxBrandtner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MaxBrandtner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MaxBrandtner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MaxBrandtner/subscriptions",
+      "organizations_url": "https://api.github.com/users/MaxBrandtner/orgs",
+      "repos_url": "https://api.github.com/users/MaxBrandtner/repos",
+      "events_url": "https://api.github.com/users/MaxBrandtner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MaxBrandtner/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 39532099,
+        "node_id": "MDU6TGFiZWwzOTUzMjA5OQ==",
+        "url": "https://api.github.com/repos/jqlang/jq/labels/feature%20request",
+        "name": "feature request",
+        "color": "207de5",
+        "default": false,
+        "description": null
+      },
+      {
+        "id": 240949711,
+        "node_id": "MDU6TGFiZWwyNDA5NDk3MTE=",
+        "url": "https://api.github.com/repos/jqlang/jq/labels/internals",
+        "name": "internals",
+        "color": "009800",
+        "default": false,
+        "description": null
+      },
+      {
+        "id": 269041056,
+        "node_id": "MDU6TGFiZWwyNjkwNDEwNTY=",
+        "url": "https://api.github.com/repos/jqlang/jq/labels/libjq",
+        "name": "libjq",
+        "color": "fbca04",
+        "default": false,
+        "description": null
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+    ],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2024-02-18T22:27:45Z",
+    "updated_at": "2024-02-21T15:51:03Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "draft": false,
+    "pull_request": {
+      "url": "https://api.github.com/repos/jqlang/jq/pulls/3044",
+      "html_url": "https://github.com/jqlang/jq/pull/3044",
+      "diff_url": "https://github.com/jqlang/jq/pull/3044.diff",
+      "patch_url": "https://github.com/jqlang/jq/pull/3044.patch",
+      "merged_at": null
+    },
+    "body": "This commit adds borrowing to the jv c-api
+
+    As
+    discussed
+    this
+    adds
+    a
+    borrowed
+    flag
+    in
+    the
+    jv
+    struct.
+
+    Adds
+    the
+    following
+    functions
+    `
+    jv
+    jv_borrow(jv)
+    `
+    `
+    jv
+    jv_is_borrowed(jv)
+    `
+
+    Changes
+    jv_copy()
+    and
+    jv_free()
+    to
+    return
+    early
+    if
+    the
+    jv
+    is
+    borrowed
+
+    still
+    need
+    to
+    add
+    documentation
+    for
+    the
+    two
+    functions
+    ",
+    "reactions": {
+      "url": "https://api.github.com/repos/jqlang/jq/issues/3044/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/jqlang/jq/issues/3044/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null
+  },
+  {
+    "url": "https://api.github.com/repos/jqlang/jq/issues/3040",
+    "repository_url": "https://api.github.com/repos/jqlang/jq",
+    "labels_url": "https://api.github.com/repos/jqlang/jq/issues/3040/labels{/name}",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/issues/3040/comments",
+    "events_url": "https://api.github.com/repos/jqlang/jq/issues/3040/events",
+    "html_url": "https://github.com/jqlang/jq/pull/3040",
+    "id": 2131041117,
+    "node_id": "PR_kwDOAE3WVc5mrzAk",
+    "number": 3040,
+    "title": "Update delpaths function to use sort with slicing",
+    "user": {
+      "login": "capak07",
+      "id": 69026837,
+      "node_id": "MDQ6VXNlcjY5MDI2ODM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69026837?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/capak07",
+      "html_url": "https://github.com/capak07",
+      "followers_url": "https://api.github.com/users/capak07/followers",
+      "following_url": "https://api.github.com/users/capak07/following{/other_user}",
+      "gists_url": "https://api.github.com/users/capak07/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/capak07/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/capak07/subscriptions",
+      "organizations_url": "https://api.github.com/users/capak07/orgs",
+      "repos_url": "https://api.github.com/users/capak07/repos",
+      "events_url": "https://api.github.com/users/capak07/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/capak07/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+    ],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2024-02-12T21:47:39Z",
+    "updated_at": "2024-02-23T22:30:07Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "draft": false,
+    "pull_request": {
+      "url": "https://api.github.com/repos/jqlang/jq/pulls/3040",
+      "html_url": "https://github.com/jqlang/jq/pull/3040",
+      "diff_url": "https://github.com/jqlang/jq/pull/3040.diff",
+      "patch_url": "https://github.com/jqlang/jq/pull/3040.patch",
+      "merged_at": null
+    },
+    "body": "Pull Request for #2868
+    -
+    Added
+    `
+    jv_array_slice
+    `
+    function
+    to
+    support
+    slicing
+    of
+    the
+    array
+    ",
+    "reactions": {
+      "url": "https://api.github.com/repos/jqlang/jq/issues/3040/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/jqlang/jq/issues/3040/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null
+  },
+  {
+    "url": "https://api.github.com/repos/jqlang/jq/issues/3037",
+    "repository_url": "https://api.github.com/repos/jqlang/jq",
+    "labels_url": "https://api.github.com/repos/jqlang/jq/issues/3037/labels{/name}",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/issues/3037/comments",
+    "events_url": "https://api.github.com/repos/jqlang/jq/issues/3037/events",
+    "html_url": "https://github.com/jqlang/jq/issues/3037",
+    "id": 2125714251,
+    "node_id": "I_kwDOAE3WVc5-s9NL",
+    "number": 3037,
+    "title": "Stream delimiters in `fromstream`",
+    "user": {
+      "login": "ab-pm",
+      "id": 53600133,
+      "node_id": "MDQ6VXNlcjUzNjAwMTMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53600133?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ab-pm",
+      "html_url": "https://github.com/ab-pm",
+      "followers_url": "https://api.github.com/users/ab-pm/followers",
+      "following_url": "https://api.github.com/users/ab-pm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ab-pm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ab-pm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ab-pm/subscriptions",
+      "organizations_url": "https://api.github.com/users/ab-pm/orgs",
+      "repos_url": "https://api.github.com/users/ab-pm/repos",
+      "events_url": "https://api.github.com/users/ab-pm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ab-pm/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2024-02-08T17:24:46Z",
+    "updated_at": "2024-02-08T17:24:46Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "body": "When using `--stream` or `tostream`, I was surprised to find some elements in the stream that have only a path but no value. After some experimentation, I found that these are emitted whenever an object or array ends, with the path being the same as the path of the previous leaf.
+
+    `
+    `
+    `
+    bash
+    $
+    echo
+    '{\"a\":13, \"b\":[{\"x\":true}, {}, 42]}'
+    |
+    jq
+    --stream
+    -c
+    '.'
+  [
+    [
+      \
+    "a\"],13]
+    [
+      [
+        \
+      "b\",0,\"x\"],true]
+      [
+        [
+          \
+        "b\",0,\"x\"]]
+        [
+          [
+            \
+          "b\",1],{}]
+          [
+            [
+              \
+            "b\",2],42]
+            [
+              [
+                \
+              "b\",2]]
+              [
+                [
+                  \
+                "b\"]]
+                `
+                `
+                `
+
+                Same
+                with
+                `
+                jq
+                -nc
+                'inputs | tostream'
+                `
+                .
+
+                #
+                #
+                #
+                Issue
+                1
+
+                First,
+                I
+                would
+                like
+                to
+                report
+                a
+                *documentation
+                request*.
+                I
+                found
+                this
+                behaviour
+                [
+                  is
+                  documented
+                ]
+                (https
+                :
+                //jqlang.github.io/jq/manual/#streaming)
+
+                >
+                Streaming
+                forms
+                include
+                [
+                  …
+                ]
+                `
+                [
+                  <path>
+                ]
+                `
+                (to
+                indicate
+                the
+                end
+                of
+                an
+                array
+                or
+                object)
+
+                but
+                there
+                is
+                no
+                explanation
+                **why
+                these
+                are
+                necessary,
+                how
+                they
+                should
+                be
+                treated,
+                or
+                what
+                the
+                significance
+                of
+                the
+                `
+                path
+                `
+                is**
+                in
+                these
+                \
+                "object/array terminators\". Why not use/allow any other value?
+
+                (I
+                can
+                guess
+                that
+                `
+                fromstream
+                `
+                needs
+                them
+                to
+                be
+                able
+                to
+                generate
+                multiple
+                results,
+                but
+                this
+                is
+                not
+                obvious
+                -
+                and
+                doesn
+                't explain why this particular format is needed)
+
+                #
+                #
+                #
+                Issue
+                2
+
+                Second,
+                I
+                would
+                like
+                to
+                report
+                a
+                *bug
+                /
+                feature
+                request*
+                :
+                **
+                `
+                fromstream
+                `
+                fails
+                silently
+                when
+                these
+                terminator
+                values
+                are
+                missing
+                or
+                invalid**.
+                I
+                found
+                by
+                experimentation
+                that
+                a
+                valid
+                terminator
+                is
+                any
+                array
+                that
+                has
+                a
+                non-empty
+                array
+                as
+                its
+                single
+                element.
+                It
+                doesn
+                't matter what the values inside the inner array are, it just mustn'
+                t
+                be
+                empty.
+                `
+                []
+                `
+                and
+                `
+                [
+                  []
+                ]
+                `
+                are
+                ignored.
+
+                #
+                #
+                #
+                #
+                Reproduction
+                `
+                `
+                `
+                bash
+                $
+                jq
+                -nc
+                'fromstream([[\"a\"],13], [[\"b\",0,\"x\"], true], [[\"b\",0,\"x\"]], [[\"b\",0]], [[\"b\"]])'
+                {
+                  \
+                "a\":13,\"b\":[{\"x\":true}]} # as expected
+
+                $
+                jq
+                -nc
+                'fromstream([[\"a\"],13], [[\"b\",0,\"x\"], true], [[\"b\"]])'
+                {
+                  \
+                "a\":13,\"b\":[{\"x\":true}]} # works even without terminators for the inner object and array
+
+                $
+                jq
+                -nc
+                'fromstream([[\"a\"],13], [[\"b\",0,\"x\"], true], [[ {}, null, false ]])'
+                {
+                  \
+                "a\":13,\"b\":[{\"x\":true}]} # really works with arbitrary values in the path
+
+                $
+                jq
+                -nc
+                'fromstream([[\"a\"],13], [[\"b\",0,\"x\"], true])'
+                $
+                jq
+                -nc
+                'fromstream([[\"a\"],13], [[\"b\",0,\"x\"], true], [])'
+                $
+                jq
+                -nc
+                'fromstream([[\"a\"],13], [[\"b\",0,\"x\"], true], [[]])'
+                #
+                no
+                output
+                at
+                all!
+                `
+                `
+                `
+
+                #
+                #
+                #
+                #
+                Expected
+                behaviour
+                I
+                would
+                expect
+                this
+                to
+                either
+                just
+                generate
+                the
+                output
+                once
+                the
+                input
+                generator
+                ends,
+                or
+                to
+                throw
+                an
+                error
+                about
+                the
+                missing
+                terminator.
+
+                #
+                #
+                #
+                Background
+
+                I
+                was
+                trying
+                to
+                merge
+                multiple
+                objects
+                that
+                are
+                provided
+                separately.
+                I
+                later
+                found
+                out
+                this
+                can
+                be
+                achieved
+                easier
+                with
+                `
+                `
+                `
+                bash
+                $
+                echo
+                '{\"a\":13} {\"b\":42}'
+                |
+                jq
+                -c
+                --slurp
+                'reduce .[] as $obj ({}; . * $obj)'
+                {
+                  \
+                "a\":13,\"b\":42}
+                #
+                or
+                $
+                echo
+                '{\"a\":13} {\"b\":42}'
+                |
+                jq
+                -cn
+                'reduce inputs as $obj ({}; . * $obj)'
+                {
+                  \
+                "a\":13,\"b\":42}
+                `
+                `
+                `
+                but
+                my
+                first
+                attempt
+                was
+                to
+                use
+                streams
+                `
+                `
+                `
+                bash
+                $
+                echo
+                '{\"a\":13} {\"b\":42}'
+                |
+                jq
+                -c
+                --stream
+                'fromstream(.)'
+                #
+                no
+                output
+                at
+                all
+                ?
+                !
+                bug
+                ?
+                $
+                echo
+                '{\"a\":13} {\"b\":42}'
+                |
+                jq
+                -c
+                --stream
+                --slurp
+                'fromstream(.[])'
+                {
+                  \
+                "a\":13}
+                {
+                  \
+                "b\":42}
+                #
+                not
+                what
+                I
+                wanted,
+                but
+                ok
+                $
+                echo
+                '{\"a\":13} {\"b\":42}'
+                |
+                jq
+                -cn
+                --stream
+                'fromstream(inputs)'
+                {
+                  \
+                "a\":13}
+                {
+                  \
+                "b\":42}
+                #
+                same
+                thing
+                `
+                `
+                `
+                before
+                I
+                realised
+                that
+                I
+                had
+                to
+                remove
+                (filter
+                out)
+                the
+                terminators
+                between
+                the
+                objects
+                and
+                then
+                append
+                my
+                own
+                in
+                the
+                end
+                :
+                `
+                `
+                `
+                bash
+                $
+                echo
+                '{\"a\":13} {\"b\":42}'
+                |
+                jq
+                -n
+                --stream
+                'fromstream((inputs | select(has(1))), [[0]])'
+                -c
+                {
+                  \
+                "a\":13,\"b\":42}
+                `
+                `
+                `
+                ",
+                "reactions"
+                :
+                {
+                  "url": "https://api.github.com/repos/jqlang/jq/issues/3037/reactions",
+                  "total_count": 0,
+                  "+1": 0,
+                  "-1": 0,
+                  "laugh": 0,
+                  "hooray": 0,
+                  "confused": 0,
+                  "heart": 0,
+                  "rocket": 0,
+                  "eyes": 0
+                },
+                "timeline_url"
+                :
+                "https://api.github.com/repos/jqlang/jq/issues/3037/timeline",
+                "performed_via_github_app"
+                :
+                null,
+                "state_reason"
+                :
+                null
+                }
+              ]

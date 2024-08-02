@@ -1,0 +1,25 @@
+# kubectl create serviceaccount monitoring --dry-run -o yaml > serviceAcc.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  creationTimestamp: null
+  name: monitoring
+---
+
+# kubectl run nginx --image=nginx  --dry-run -o yaml >> serviceAcc.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  serviceAccountName: monitoring
+  containers:
+    - image: nginx
+      name: nginx
+      resources: { }
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: { }
